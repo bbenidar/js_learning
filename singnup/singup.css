@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; /* Hide overflow to contain the animation */
+}
+
+/* Create a background animation using keyframes */
+@keyframes dataFlowAnimation {
+  0% {
+      background: linear-gradient(45deg, #34495e, #e74c3c);
+      background-size: 200% 200%; /* Initial size */
+      background-position: 100% 0%; /* Initial position */
+  }
+  100% {
+      background: linear-gradient(45deg, #34495e, #e74c3c);
+      background-size: 200% 200%; /* Final size */
+      background-position: -100% 0%; /* Final position (opposite direction) */
+  }
+}
+
+.hero {
+  animation: dataFlowAnimation 5s linear infinite; /* Adjust the duration as needed */
+}
+/* search */
+.container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+  }
+  
+  .mainbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 160px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .checkbox:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .checkbox:checked {
+    right: 10px;
+  }
+  
+  .checkbox:checked ~ .mainbox {
+    width: 50px;
+  }
+  
+  .checkbox:checked ~ .mainbox .search_input {
+    width: 0;
+    height: 0px;
+  }
+  
+  .checkbox:checked ~ .mainbox .iconContainer {
+    padding-right: 8px;
+  }
+  
+  .checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  .search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: rgb(4, 4, 4);
+    transition: all 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .search_input::placeholder {
+    color: rgba(0, 0, 0, 0.776);
+  }
+  
+  .iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+  }
+  
+  .search_icon {
+    box-sizing: border-box;
+    fill: rgb(0, 0, 0);
+    font-size: 1.3em;
+  }
+  /* and search */
+
+
+.button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; /* Set left to 0 to take up the entire top width */
+    /* background-color: rgb(194, 10, 240); */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px, rgba(13, 13, 13, 0.5) 5px 5px 5px; */
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+
+/* log in page */
+.form {
+    /* Existing styles */
+    --input-focus: #e74c3c;
+    --font-color: #fff;
+    --font-color-sub: #ccc;
+    --bg-color: #2c3e50;
+    --main-color: #e74c3c;
+    padding: 20px;
+    background: #34495e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 20px;
+    border-radius: 10px;
+    height: 1000px;
+    width: 80%;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+  
+
+.singUp {
+    align-items: center;
+    text-align: center; 
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.singUp span{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.title {
+  color: var(--font-color);
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+  .title span {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+}
+
+  .input {
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
+  .input:focus {
+    border: 2px solid var(--input-focus);
+  }
+  
+  .login-with {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button-log {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+  
+  .button-log:active,
+  .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  
+  .button-confirm {
+    margin: 50px auto 0 auto;
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+  /* end log in  */

@@ -1,0 +1,286 @@
+body {
+    background: linear-gradient(45deg, #34495e, #e74c3c);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+/*  */
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: 500;
+
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.hero h1 span{
+    color: #1a343f;
+}
+
+textarea{
+    background: linear-gradient(45deg, #555b62, #e76759);
+    color: #fff;
+    width: 600PX;
+    height: 250px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    resize: none;
+}
+textarea::placeholder{
+    color: #fff;
+}
+ .row {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+ }
+
+ .iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+  }
+  
+  .search_input::placeholder {
+    color: rgba(0, 0, 0, 0.776);
+  }
+  
+  .search_icon {
+    box-sizing: border-box;
+    fill: rgb(0, 0, 0);
+    font-size: 1.3em;
+  }
+
+  .button-log {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+
+  .play_img{
+    width: 20px;
+    height: 20px;
+  }
+
+  select{
+    flex: 1;
+    height: 45px;
+    border-radius: 45px;
+    border: 2px solid var(--main-color);
+    background-color: #555b62;
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    padding: 0 20px;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+
+  }
+
+ .button-log:active,
+ .converButton:active {
+   box-shadow: 0px 0px var(--main-color);
+   transform: translate(3px, 3px);
+ }
+ /* and search */
+ .converButton {
+    --input-focus: #e74c3c;
+    --font-color: #fff;
+    --font-color-sub: #ccc;
+    --bg-color: #2c3e50;
+    --main-color: #e74c3c;
+   margin: 50px auto 0 auto;
+   width: 140px;
+   height: 45px;
+   border-radius: 10px;
+   border: 2px solid var(--main-color);
+   background-color: var(--bg-color);
+   box-shadow: 4px 4px var(--main-color);
+   font-size: 18px;
+   font-weight: 600;
+   color: var(--font-color);
+   cursor: pointer;
+ }
+
+ 
+
+
+/*  */
+ .checkbox:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .checkbox:checked {
+    right: 10px;
+  }
+  
+  .checkbox:checked ~ .mainbox {
+    width: 50px;
+  }
+  
+  .checkbox:checked ~ .mainbox .search_input {
+    width: 0;
+    height: 0px;
+  }
+  
+  .checkbox:checked ~ .mainbox .iconContainer {
+    padding-right: 8px;
+  }
+  
+  .checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+  }
+  
+  .search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .search_input::placeholder {
+    color: rgba(0, 0, 0, 0.776);
+  }
+  
+  .iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+  }
+  
+  .search_icon {
+    box-sizing: border-box;
+    fill: rgb(0, 0, 0);
+    font-size: 1.3em;
+  }
+
+  .button-log {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+  
+  .button-log:active,
+  .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  /* and search */
+  .button-confirm {
+    margin: 50px auto 0 auto;
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }
+
+.button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; /* Set left to 0 to take up the entire top width */
+    /* background-color: rgb(194, 10, 240); */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px, rgba(13, 13, 13, 0.5) 5px 5px 5px; */
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
